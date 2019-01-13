@@ -10,6 +10,9 @@ if (isHappy == true) {
 } else {
   console.log("I am not happy");
 }
+make sure both same typeof, eg: a string/ boolean. 
+
+two equals means a question. one equals mean just assign right to the Left.
 
 /* 
   EXPECTED RESULT
