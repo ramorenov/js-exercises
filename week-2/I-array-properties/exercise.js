@@ -5,8 +5,8 @@
 
 */
 
-function isEmpty(arr) {
-  return; // complete this statement
+if (!Array.isEmpty(arr) || !array.length) {
+  return true;
 }
 
 /* 

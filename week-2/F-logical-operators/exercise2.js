@@ -5,8 +5,17 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
 
+  function isNegative(num) {
+    if (num <= 0) {
+      return true;
+
+}
+
+
+
+    var str = "Daniel";
+    var n = str.startsWith("D");
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
