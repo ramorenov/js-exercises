@@ -1,4 +1,4 @@
-/*
+\/*
   Conditionals
   ---------------------------------
   Write a function that checks if a student has passed
@@ -8,8 +8,10 @@
 */
 
 function studentPassed(grade) {
-
-}
+if(grade >= 50) {
+    return "Pass";
+  } return "Fail";
+};
 
 /* 
 DO NOT EDIT BELOW THIS LINE

@@ -12,11 +12,22 @@ var name2 = "Harun";
 var role2 = "student";
 
 
+
+if(role === "student"){
 console.log("Hi, My name is " + name);
-console.log("Hi, My name is " + name2);
+}
 
+if(role2 === "student"){
+  console.log("Hi, My name is " + name2);
+}
 
+function ifStudent(name, role){
+  if(role === "student"){
+    console.log("Hi, My name is " + name);
+  }
+}
 
+ifStudent(name2, role2);
 /* 
 EXPECTED RESULT
 ---------------
