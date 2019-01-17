@@ -1,0 +1,18 @@
+1.check names of the given array which contain a paticular character ,then print it with  a message.
+var names=[“meena”,”Zoe”,”Dilan”,”Rockie,”] 
+ 
+2create a new array with the names which inculdes letter ”a” and With a message “yes I am”
+ 
+expeted output  [meena yes I am ,Dilan yes I am]
+ 
+ 
+2.print  names of an array with an Exclamation mark(!)
+var names=[“meena”,”zoe”,”Dilan”,”Rockie”]
+ 
+expected output[]Meena!,Zoe!,Dilan!,Rockie!
+ 
+3 merge two integer arrays .output should contain double of the second array.
+Var number1=[2,4,6,4
+var number2[1,2,3,4]
+ 
+expected output [2,4,6,8,2,4,6,12]
