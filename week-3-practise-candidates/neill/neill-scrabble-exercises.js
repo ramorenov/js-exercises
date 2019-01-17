@@ -1,15 +1,9 @@
-// This set of exercises is based on the game "Scrabble"
+// These exercises are about the game Scrabble.
 //
-// In the game, words are arranged from tiles.
-// Each word is scored by summing the points for each of its letters.
-// Different letters have different points.
-// Example: The word 'happy' would score 10 points because:
-//    h = 3, a = 1, p = 2, p = 2, y = 2
+// Read the readme.md file, first!
 //
 // You will be provided with a function, scoreLetter(letter), which tells you the score of ONE letter.
 // You will have to use the function to find the score for some words.
-//
-// image: https://www.flickr.com/photos/piviso/26085051834/in/photolist-fPih6t-FK3H81-DSjQVZ-owd1jH
 
 //Don't edit this function...
 function scoreLetter(letter) {
