@@ -1,13 +1,12 @@
-/* The following numbers are ages for a group of students. Create a function so that you’ll find out their ages “in total” after 10 years
-Hint: Use find method */
+/* The following numbers are ages for a group of students. 
+Create a function to find out their ages “in total” after 10 years.
+*/
 
-var numbers = [18, 17, 19, 16];
+var ages = [18, 17, 19, 16];
 
-var checkingAges ;
-var totalAgeInTotal
+var totalAgeAfter10Years;
 
-console.log(checkingAges);
-console.log(totalAgeInTotal);
+console.log(totalAgeAfter10Years);
 
 /* EXPECTED RESULT 
  -----------
