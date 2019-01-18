@@ -2,7 +2,7 @@
 You are working in a car dealer. You have "carsOnSaleWithProductionYear" cars on sale. 
 This array contains nested arrays showing each car by the make and production year as pairs. 
 You manager asked you to make  a new list of cars on sale by the make and age.
-- Make a list of cars on sale by completeing the statement on line 15.
+- Make a list of cars on sale by completeing the statement on line 17.
 */
 
 var carsOnSaleWithProductionYear = [
