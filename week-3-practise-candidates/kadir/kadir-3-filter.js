@@ -1,9 +1,15 @@
 /*
-You are working in a car dealer. You have "isManulCars" cars on sale. "isManulCars" array contains nested arrays showing each car by the make and and either is Manual or not as pairs(if it is true it is manual). One customer is calling you to buy a manual car.
-- Make a list of manual cars on sale by completeing the statement on line 15.
+You are working in a car dealer. You have "allCars" cars on sale.
+The array contains nested arrays showing each car by the make and 
+whether or not it has a manual transmission.
+(if it is true it is manual). 
+
+One customer is calling you to buy a manual car.
+
+- Make a list only of your manual cars on sale by completing the statement on line 21.
 */
 
-var isManualCars = [
+var allCars = [
   ["Honda", true],
   ["Nissan", false],
   ["BMW", true],
