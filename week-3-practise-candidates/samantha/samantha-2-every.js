@@ -1,27 +1,34 @@
-//2
-
 /*
   Following on from exercise 1...
   The travellers have safely landed and are foraging for food in the natural wildlife.
   There are bushes with many different colour berries.
-  The pink berries are the ONLY safe one's to eat.
+  The pink berries are the ONLY safe ones to eat.
   If any other berries are present, it's best not to eat from the bush at all!
   Using .every(), determine, if the bush has ALL PINK berries and is safe for the astronauts to eat from the bush.
 */
 
-var berryColors = ["pink", "pink", "pink", "neon", "pink", "transparent"];
+var bush1BerryColors = ["pink", "pink", "pink", "neon", "pink", "transparent"];
+var bush2BerryColors = ["pink", "pink", "pink", "pink"];
 
-var safeToEat; //Complete this statement
+var bush1SafeToEat; //Complete this statement
+var bush2SafeToEat; //Complete this statement
 
-if (safeToEat) {
-  console.log("This is safe to eat");
+if (bush1SafeToEat) {
+  console.log("Bush 1 is safe to eat from");
 } else {
-  console.log("Toxic! Leave this alone");
+  console.log("Toxic! Leave bush 1 alone");
+}
+
+if (bush2SafeToEat) {
+  console.log("Bush 2 is safe to eat");
+} else {
+  console.log("Toxic! Leave bush 2 alone");
 }
 
 /*
   EXPECTED OUTPUT
 
-  Toxic! Leave this alone"
+  Toxic! Leave bush 1 alone"
+  Bush 2 is safe to eat from"
 
 */
