@@ -1,20 +1,24 @@
 /*
-I am new to London and would like to know what transport I can take to different Locations.
-Using .map() print where I can go if I only want to use the river boat.
+I am new to London and would like to know what transport I can take to different famous locations.
 
-An array with London Location has been provided
-Console.log has been provided
+An array with London locations have been provided.
+
+Using .map(), print where I can go if I only want to use the river boat.
+
 */
 
-var londonLocation = [
+var londonLocations = [
+    ["Angel", "tube", "bus"],
     ["London Bridge", "tube", "bus", "river boat"],
     ["Tower bridge", "tube", "bus"],
-    ["Greenwich", "tube", "bus", "river boat"]
+    ["Greenwich", "tube", "bus", "river boat"],
   ];
-  
-  
-  console.log(londonLocationTransport);
-  
-  /* EXPECTED OUTPUT */
-  /*London bridge, river boat*/
-  /*Greenwich, river boat*/
+
+var locationsByBoat;
+
+console.log(locationsByBoat);
+
+/* EXPECTED OUTPUT
+
+["London bridge", "Greenwich"]
+*/
