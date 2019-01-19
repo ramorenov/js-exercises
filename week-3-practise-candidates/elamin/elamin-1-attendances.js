@@ -5,7 +5,6 @@ You have an array named "attendanceCounts"  wich contains all the students' name
 
 Produce a new array named "eligibleStudentNames" containing only the NAMES
 of the students who have attended AT LEAST 8 classes.
-
 */
 
 var attendances = [ ["Ahmed", 8], ["Clement", 10], ["Elamin", 6], ["Adam", 7], ["Tayoa", 11], ["Nina", 10]];
@@ -15,7 +14,8 @@ var eligibleStudentNames = attendances.filter(s => s[1] >= 8).map(s => s[0]); //
 console.log(eligibleStudentNames);
 
 /* expected output
-Note: student attendance counts should NOT be included in your console output.
 
 [ 'Ahmed', 'Clement', 'Tayoa', 'Nina' ]
+
+Note: student attendance counts should NOT be included in your console output.
 */
