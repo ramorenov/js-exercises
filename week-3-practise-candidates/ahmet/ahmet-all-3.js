@@ -1,6 +1,8 @@
-//Password Validation
-/*
-   This program should check if each passwords in the array ("password[]") contains valid Password (see below for password criterias) and return new array ("PasswordValidationResult[]") with True/False booleans.
+/* Password Validation
+
+   This program should check if each passwords in the array ("password[]") 
+   contains valid Password (see below for password criterias) and return 
+   new array ("PasswordValidationResult[]") with True/False booleans.
 
 LEVEL 1: 
 
