@@ -15,7 +15,7 @@ var londonLocations = [
     ["Greenwich", "tube", "bus", "river boat"],
   ];
 
-var locationsByBoat = londonLocations.filter(l => l.includes("river boat")).map(l => l[0]);
+var locationsByBoat;
 
 console.log(locationsByBoat);
 
