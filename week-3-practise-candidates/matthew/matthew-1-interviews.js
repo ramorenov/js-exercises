@@ -1,47 +1,53 @@
 /*
-In this exercise, Mr Very Important Boss Man (Mr VIBM) has a very important job for you!
+Mr Very Important Boss Man (Mr VIBM) has a very important job for you!
+He needs you to schedule some job interviews.
 
-- First, he wants you to remove any candidates from his list of email addresses 
-and names that include the word 'spam'. 
+He has given you his candidate contact details, and some appointment times.
+
+- First, he wants you to remove any candidates which look like spam.
 Use the .filter() function!
 
-- Then he wants you to sort the candidates so that candidate1 is first, candidate 2 is second and so on.
+- Then (ideally) he wants you to sort the candidates so that candidate1 is first, candidate2 is second and so on.
 Use the .sort() function!
 
-- Finally, Mr VIBM wants you to use the .forEach() function to console log the sorted arrays with formatting 
+- Finally, Mr VIBM wants you to use the .forEach() function to console log the candidate appointments, 
 like this:
 
-'Email address: candidate1@jobmail.com Dear Gaius your interview is at this time: 10:00'
+'To: candidate1@jobmail.com Dear Gaius your interview is at this time: 10:00'
 
-Remember: the .forEach() method tracks the index of every array item in the second parameter by
+Hint: the .forEach() method tracks the index of every array element in the second parameter by
 default! 
-
 */
-var emails = [
-  "candidate2@jobmail.com",
-  "candidate3@jobmail.com",
-  "candidate1@jobmail.com",
-  "candidate4@jobmail.com",
-  "candidate5@jobmail.com",
-  "spam@spam.com"
-];
-var times = ["10:00", "10:15", "10:30", "10:45", "11:00", "11:15"];
-var names = ["Gaius", "Adama", "Starbuck", "Boomer", "Gaeta", "spam"];
 
-function filterEmail(item) {
-  return;
+var candidates = [
+  ["Adama",    "candidate2@jobmail.com"],
+  ["Starbuck", "candidate3@jobmail.com"],
+  ["Gaius",    "candidate1@jobmail.com"],
+  ["Boomer",   "candidate4@jobmail.com"],
+  ["Gaeta",    "candidate5@jobmail.com"],
+  ["spam",     "spam@spam.com"]
+];
+
+var times = ["11:00", "11:30", "12:00", "15:00", "15:30", "16:00"];
+
+function containsSpam(candidateInfo) {
+  return; //TODO
 }
 
-sortedArray.forEach(function(item, index) {
-  return;
+var realCandidates; // TODO
+var sortedCandidates; // TODO
+
+sortedCandidates.forEach(function(candidate, index) {
+  //TODO
 });
 
 /*
 EXPECTED OUTPUT
 
-Email address: candidate1@jobmail.com Dear Gaius your interview is at this time: 10:00
-Email address: candidate2@jobmail.com Dear Adama your interview is at this time: 10:15
-Email address: candidate3@jobmail.com Dear Starbuck your interview is at this time: 10:30
-Email address: candidate4@jobmail.com Dear Boomer your interview is at this time: 10:45
-Email address: candidate5@jobmail.com Dear Gaeta your interview is at this time: 11:00
+To: candidate1@jobmail.com Dear Gaius your interview is at this time: 11:00
+To: candidate2@jobmail.com Dear Adama your interview is at this time: 11:30
+To: candidate3@jobmail.com Dear Starbuck your interview is at this time: 12:00
+To: candidate4@jobmail.com Dear Boomer your interview is at this time: 15:00
+To: candidate5@jobmail.com Dear Gaeta your interview is at this time: 15:30
+
 */
