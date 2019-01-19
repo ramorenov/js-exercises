@@ -5,6 +5,7 @@ An array with London locations have been provided.
 
 Using .map(), print where I can go if I only want to use the river boat.
 
+Note: only the names should be printed, not the means of transport.
 */
 
 var londonLocations = [
@@ -14,7 +15,7 @@ var londonLocations = [
     ["Greenwich", "tube", "bus", "river boat"],
   ];
 
-var locationsByBoat;
+var locationsByBoat = londonLocations.filter(l => l.includes("river boat")).map(l => l[0]);
 
 console.log(locationsByBoat);
 
