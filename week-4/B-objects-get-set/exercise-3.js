@@ -3,6 +3,11 @@
 */
 
 // WRITE CODE BELOW THIS
+var kitten = {
+    name: "Gilbert"
+};
+
+// DO NOT MODIFY BELOW THIS LINE
 
 // WRITE CODE ABOVE THIS
 
