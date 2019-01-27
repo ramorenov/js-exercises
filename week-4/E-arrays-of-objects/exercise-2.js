@@ -40,11 +40,25 @@ WRITE YOUR CODE BELOW
 */
 
 
-var destinationNamesWithin500Kms = // Complete here
+var destinationNamesWithin500Kms = travelDestinations.filter(inside500);
+function inside500(destination) {
+    return destination.distanceKms < 500;
+}
 
-var destinationNameReachableByFerry = // Complete here
+destinationNamesWithin500Kms = destinationNamesWithin500Kms.map(
+    dest =>dest.destinationName
+);// Complete here
 
-var destinationNamesMoreThan300KmsAwayByTrain = // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
+var x = travelDestinations.find(destination => destination.transportations.includes("ferry")
+);
+var destinationNameReachableByFerry = x.destinationName;// Complete here
+
+var destinationNamesMoreThan300KmsAwayByTrain = []; 
+travelDestinations.filter(
+    destination => destination.distanceKms > 300 && destination.transportations.includes("train")
+    )
+    .forEach(destination => destinationNamesMoreThan300KmsAwayByTrain.push(destination.destinationName)
+    );// Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
 
 
 /*
