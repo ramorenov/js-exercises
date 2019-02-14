@@ -1,54 +1,67 @@
-/* The Blue Button*/
 var blueBtn = document.querySelector("#blueBtn");
+var orangeBtn = document.querySelector("#orangeBtn");
+var greenBtn = document.querySelector("#greenBtn");
+var jumbotronBackground = document.querySelector(".jumbotron");
+var donateBtn = document.querySelector("#donateBtn");
+var volunteerBtn = document.querySelector("#volunteerBtn");
 
 blueBtn.addEventListener("click", function() {
-  document.getElementsByClassName("jumbotron")[0].style.backgroundColor =
-    "#588fbd";
-  document.querySelector(".buttons").firstElementChild.style.backgroundColor =
-    "#ffa500";
-  document.querySelector(".buttons").lastElementChild.style.backgroundColor =
-    "black";
-  document.querySelector(".buttons").lastElementChild.style.color = "white";
+  jumbotronBackground.style.backgroundColor = "#588fbd";
+  donateBtn.style.backgroundColor = "#ffa500";
+  volunteerBtn.style.backgroundColor = "black";
+  volunteerBtn.style.color = "white";
 });
-/* The Orange Button*/
-var orangeBtn = document.querySelector("#orangeBtn");
 
 orangeBtn.addEventListener("click", function() {
-  document.getElementsByClassName("jumbotron")[0].style.backgroundColor =
-    "#f0ad4e";
-  document.querySelector(".buttons").firstElementChild.style.backgroundColor =
-    "#5751fd";
-  document.querySelector(".buttons").lastElementChild.style.backgroundColor =
-    "#31b0d5";
-  document.querySelector(".buttons").lastElementChild.style.color = "white";
+  jumbotronBackground.style.backgroundColor = "#f0ad4e";
+  donateBtn.style.backgroundColor = "#5751fd";
+  volunteerBtn.style.backgroundColor = "#31b0d5";
+  volunteerBtn.style.color = "white";
 });
-/* The Green Button*/
-var greenBtn = document.querySelector("#greenBtn");
 
 greenBtn.addEventListener("click", function() {
-  document.getElementsByClassName("jumbotron")[0].style.backgroundColor =
-    "#87ca8a";
-  document.querySelector(".buttons").firstElementChild.style.backgroundColor =
-    "black";
-  document.querySelector(".buttons").lastElementChild.style.backgroundColor =
-    "#8c9c08";
+  jumbotronBackground.style.backgroundColor = "#87ca8a";
+  donateBtn.style.backgroundColor = "#5751fd";
+  volunteerBtn.style.backgroundColor = " black ";
 });
-/*form-part2 */
-var formTag = document.querySelector("form");
-formTag.lastElementChild.addEventListener("click", validateForm);
-function validateForm() {
-  var email = document.querySelector("#exampleInputEmail1");
-  var name = document.querySelector("#example.text-input");
-  var description = document.querySelector("#exampleTexterea");
-  event.preventDefault();
-};
 
-  if (email.value.length === 0) {
-    email.style.backgroundColor = "red";
-  } else if (name.value.length === 0) {
-    name.style.backgroundColor = "red";
-  } else if (description.value.lengh === 0) {
-    description.style.backgroundColor = "red";
-  } else (!email.value.includes("@")) {
-    email.style.backgroundColor = "red";
+var emailInput = document.querySelector("#exampleInputEmail1");
+var submitBtn = document.querySelector("#submitBtn");
+var nameInput = document.querySelector("#name-input");
+var textInput = document.querySelector("#exampleTextarea");
+
+function validateNonEmpty(value) {
+  return value.length > 0;
+}
+
+function validateEmail(email) {
+  return email.includes("@");
+}
+
+submitBtn.addEventListener("click", function(event) {
+  if (validateEmail(emailInput.value) === false) {
+    emailInput.style.backgroundColor = "red";
+  } else {
+    nameInput.style.backgroundColor = "white";
   }
+  if (validateNonEmpty(textInput.value) === false) {
+    textInput.style.backgroundColor = " red";
+  } else {
+    textInput.style.backgroundColor = "white";
+  }
+
+  if (validateNonEmpty(nameInput.value) === false) {
+    nameInput.style.backgroundColor = "red";
+  } else {
+    nameInput.style.backgroundColor = "white";
+  }
+  if (
+    validateEmail(emailInput.value) &&
+    validateNonEmpty(textInput.value) &&
+    validateNonEmpty(nameInput.value)
+  ) {
+    alert("Thank you for filling this form!");
+    window.location.reload();
+  }
+  event.preventDefault();
+});
