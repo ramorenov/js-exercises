@@ -8,9 +8,11 @@
   EXERCISE 1
   =======
 
-  Insert the result of promise1 into the #exercise1 element. Hint: .then()
+  Insert the result of promise1 into the
+   #exercise1 element. Hint: .then()
 
-  EXPECTED RESULT: The #exercise1 element has textContent = "A Promising
+  EXPECTED RESULT: The #exercise1 
+  element has textContent = "A Promising
   Promise"
 */
 function exercise1() {
@@ -21,9 +23,11 @@ function exercise1() {
   EXERCISE 2
   =======
 
-  Insert the result of promise2 into the #exercise2 element. Hint: .catch()
+  Insert the result of promise2 into the
+   #exercise2 element. Hint: .catch()
 
-  EXPECTED RESULT: The #exercise2 element has textContent = "A Unpromising
+  EXPECTED RESULT: The #exercise2 
+  element has textContent = "A Unpromising
   Promise"
 */
 function exercise2() {

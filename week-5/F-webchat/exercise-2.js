@@ -6,8 +6,10 @@ Task 2
 
 Your second task is to send a new message to the server.
 
-After writing a message in the input and clicking on the submit button,
-send the message to store it on the remote server. Use the following API:
+After writing a message
+ in the input and clicking on the submit button,
+send the message to store
+ it on the remote server. Use the following API:
 
 HTTP Verb: POST
 API: https://codeyourfuture.herokuapp.com/api/messages
