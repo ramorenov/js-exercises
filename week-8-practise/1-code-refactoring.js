@@ -1,4 +1,12 @@
-*
+/* EXERCISE 1 - Code Refactoring
+ * This script functions as a library. 
+ * This script functions as a library.
+ * Its purpose is to provide a set of functions that users can use to manipulate and decorate text.
+ *
+ * Using the coding practices you have learnt (you can use the syllabus as reference),
+ * edit the code so that it establishes good coding standards. 
+ * edit the code so that it establishes good coding standards.
+ *
  * There may be both syntax and logical errors present.
  */
 
@@ -12,10 +20,6 @@ exports function reverseAndCaptilise(text)
 
   return reversed
   }
-  
-function reverseAndCapitilize(text) {
-  return text.toUpperCase().split('').reverse().join('');
-}
 
 // Function that returns text with every other letter capitlised
 export function everyOtherLetterCapitilised(text) {
@@ -24,25 +28,24 @@ export function everyOtherLetterCapitilised(text) {
        text[i] = text[i].toUpperCase() 
     }    
   } 
-function everyOtherLetterCapitilised(text) {
-  //converting text to array and making each letter an element of array
-  text = text.split('');
-  // looping through each letter of the array
-  for (let i = 0; i < text.length; i++) {
-    if (i % 2 === 0) {
-      //converting letter to uppercase if the index number is even
-      text[i] = text[i].toUpperCase();
-    }
-  }
-  return text.join("");//converting array back to string
+// Function that reverses and capitalises text
+export function reverseAndCapitalise(text) {
+  return text
+    .split("")
+    .reverse()
+    .join("")
+    .toUpperCase();
 }
 
 export  function lowerCase(text) {
   let text = text.toLowerCase()
 
   return text
-function lowerCase(text) {
-  return text.toLowerCase()
+// Function that returns text with every other letter capitalised
+export function capitaliseLetters(text) {
+  return text.toUpperCase();
 }
-
-export { reverseAndCapitilize, everyOtherLetterCapitilised, lowerCase };
+// Function that returns text in lowercase
+export function lowerCase(text) {
+  return text.toLowerCase();
+}
