@@ -4,11 +4,18 @@
 
 var nums = [10, 1, 5, 29, 100];
 var nums2 = [11, 6, 3, 29, 12];
-var sortedNums; // complete this statement
+var sortedNums = nums.concat(nums2).sort(function(a, b) {
+  return a - b;
+}); // complete this statement
 
 console.log(sortedNums);
 
 // 2. Using code, show that the variables nums and nums2 were not changed
+if (sortedNums == nums.concat(nums2)) {
+  console.log("los arrays num1 y num 2 cambiaron");
+} else {
+  console.log("los arrays num 1 y num 2 no han cambiado");
+}
 
 /* 
   EXPECTED RESULT

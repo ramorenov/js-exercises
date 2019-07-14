@@ -11,8 +11,8 @@
 var bush1BerryColours = ["pink", "pink", "pink", "neon", "pink", "transparent"];
 var bush2BerryColours = ["pink", "pink", "pink", "pink"];
 
-var bush1SafeToEat; //Complete this statement
-var bush2SafeToEat; //Complete this statement
+var bush1SafeToEat = bush1BerryColours.every(berries => berries === "pink"); //Complete this statement
+var bush2SafeToEat = bush2BerryColours.every(berries => berries === "pink"); //Complete this statement
 
 if (bush1SafeToEat) {
   console.log("Bush 1 is safe to eat from");
@@ -30,4 +30,9 @@ if (bush2SafeToEat) {
  EXPECTED OUTPUT
  Toxic! Leave bush 1 alone"
  Bush 2 is safe to eat from"
+*/
+
+/* Hint:
+"Hfr gur rirel shapgvba"
+(decode this at https://rot13.com)
 */
