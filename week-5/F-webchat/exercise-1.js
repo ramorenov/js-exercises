@@ -33,5 +33,35 @@ When you open index.html in your browser, it should display the existing message
 
 */
 
-
 // Write your code here
+let messagebox = document.querySelector("#message-list");
+
+function UpdateChat() {
+  // a partir de este punto va la promesa que hace la peticion de los datos para actualizar el chat cada 2 segundos con la funcion setinterval llamada abajo.
+
+  fetch("https://codeyourfuture.herokuapp.com/api/messages")
+    .then(text =>
+      //console.log(text.json()),
+      text.json()
+    )
+    .then(data =>
+      data
+        .filter(
+          item =>
+            item.content != "some text" &&
+            item.content != undefined &&
+            item.content != "" &&
+            item.content != "new Date()" &&
+            !item.content.includes("2019-05-11T01")
+        )
+        .forEach(
+          item =>
+            (messagebox.innerHTML += `<div>${item.datetime}---${
+              item.content
+            }</div>`)
+        )
+    );
+  document.querySelector("#message-list").innerHTML = "";
+}
+
+setInterval(UpdateChat, 20000);

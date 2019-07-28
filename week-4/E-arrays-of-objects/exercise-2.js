@@ -50,13 +50,15 @@ var destinationNamesWithin500Kms = travelDestinations
 var destinationNameReachableByFerry = travelDestinations
   .filter(item => item.transportations.includes("ferry"))
   .map(item => item.destinationName); // Complete here
-
+let arr = [];
 var destinationNamesMoreThan300KmsAwayByTrain = travelDestinations
   .filter(
     item => item.transportations.includes("train") && item.distanceKms > 300
   )
-  //   .map(item => item.destinationName);
-  .forEach(item => console.log(item.destinationName)); // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
+  .forEach(function(item) {
+    console.log(item.destinationName);
+  }); // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
+// .map(item => item.destinationName);
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
