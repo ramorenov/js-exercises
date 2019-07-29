@@ -44,7 +44,8 @@ function UpdateChat() {
       //console.log(text.json()),
       text.json()
     )
-    .then(data =>
+    .then(data => {
+      messagebox.innerHTML = "";
       data
         .filter(
           item =>
@@ -59,9 +60,8 @@ function UpdateChat() {
             (messagebox.innerHTML += `<div>${item.datetime}---${
               item.content
             }</div>`)
-        )
-    );
-  document.querySelector("#message-list").innerHTML = "";
+        );
+    });
 }
-
-setInterval(UpdateChat, 20000);
+UpdateChat();
+setInterval(UpdateChat, 2000);
